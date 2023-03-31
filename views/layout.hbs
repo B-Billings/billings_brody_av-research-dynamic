@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/css/main.css' />
+  </head>
+  <body>
+    <!-- TAB LISTS -->
+    <a href="#main-content">Skip to content</a>
+    <a href="#footer-content">Skip to Footer</a>
+
+    <!-- HEADER AREA -->
+    <header>
+        <h1 class="hidden">Header Area</h1>
+        <section class="nav-menu">
+            <h2 class="hidden">Main Navigation</h2>
+            <div id="logo-area">
+                <img id="logo" src="/images/billings_brody.png" alt="Brody Billings Logo" aria-label="This is Brody's Logo image">
+            </div>
+            <div id="nav-area">
+            <div class="nav-list" role="navigation">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                    <a href="/video">Videos</a>
+                    <a href="/audio">Audio</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </section>
+    </header>
+    <section class="fillsection">
+       {{{body}}}
+    </section>
+
+    <!-- FOOTER AREA -->
+    <footer>
+        <a id="footer-content"></a>
+        <h2 class="hidden">Footer Area</h2>
+        <section class="footer-area">
+            <div>
+                <h3>Brody Billings AV Research</h3>
+            </div>
+            <div class="footer-nav">
+            <h3 class="hidden">Footer Nav</h3>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                        <a href="/video">Videos</a>
+                        <a href="/audio">Audio</a>
+                </li>
+            </ul>
+            </div>
+        </section>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</html>
