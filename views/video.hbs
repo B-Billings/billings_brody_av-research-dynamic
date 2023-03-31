@@ -1,0 +1,48 @@
+    <!-- CONTENT AREA -->
+    <section id="about-area">
+        <h2>Video Accessibility  </h2>
+        <p> Welcome to the video page! On this page you will see a custom set of buttons that can be toggled on and off with the button below called “toggle buttons area” all of the custom buttons have aria tags adding a description to each individually. There are also Closed Captions and Subtitles on the first video, on the second video as there is no audio there are just closed captions. </p>
+        <button aria-expanded="false" id="toggle-buttons">Toggle Buttons Area</button>
+    </section>
+    <section class="content-area">
+        <a id="main-content"></a>
+        <h2 class="hidden">Main Content video area</h2>
+        <div class="video-area">
+            <h3 class="videoheadings">Bird Video</h3>
+            <video id="birdvideo" width="720" height="480" controls>
+                <source src="videos/bird.mp4" type="video/mp4">
+                <track src="captions/bird-video-captions.vtt" label="English" kind="captions" srclang="en">
+                <track src="captions/bird-video-subtitles.vtt" label="English" kind="subtitles" srclang="en">
+              </video>
+        </div>
+        </section>
+        <section class="buttons-area">
+            <h4 class="hidden">Buttons Area Video 1</h4>
+            <button aria-label="Play Button" id="bird-play">PLAY</button>
+            <button aria-label="Pause Button" id="bird-pause">PAUSE</button>
+            <button aria-label="Rewind Button" id="bird-rewind">REWIND</button>
+            <button aria-label="Fast Forward Button" id="bird-fastforward">FAST FORWARD</button>
+            <button aria-label="closed captions Button" id="bird-cc">CLOSED CAPTIONS</button>
+            <button aria-label="Subtitles Button" id="bird-st">SUBTITLES</button>
+        </section>
+        <section class="content-area">
+        <div class="video-area-hockey">
+            <h3 class="videoheadings">Hockey Video</h3>
+        <video id="hockeyvideo" width="720" height="480" controls>
+            <source src="videos/hockey.mp4" type="video/mp4">
+            <track src="captions/hockey-video-captions.vtt" label="English" kind="captions" srclang="en">
+                      </video>
+         </div>
+    </section>
+    <section class="buttons-area2">
+        <h4 class="hidden">Buttons Area Video 1</h4>
+        <button aria-label="Play Button" id="hockey-play">PLAY</button>
+        <button aria-label="Pause Button" id="hockey-pause">PAUSE</button>
+        <button aria-label="Rewind Button" id="hockey-rewind">REWIND</button>
+        <button aria-label="Fast Forward Button" id="hockey-fastforward">FAST FORWARD</button>
+        <button aria-label="closed captions Button" id="hockey-cc">CLOSED CAPTIONS</button>
+        <button  aria-label="Subtitles Button" id="hockey-st">SUBTITLES</button>
+    </section>
+    <script src="js/components/birds.js" type="module" defer></script>
+<script src="js/components/hockey.js" type="module" defer></script>
+<script src="js/main.js" type="module" defer></script>

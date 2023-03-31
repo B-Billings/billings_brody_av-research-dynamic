@@ -1,0 +1,27 @@
+
+    <!-- CONTENT AREA -->
+    <section id="about-area">
+        <h2>About this project</h2>
+        <p>This project is based on audio and video accessibility. There are two separately made routes that a user can navigate too, an audio and video. Both pages have their dedicated audio and video samples. On the homepage you have three different ways to access the pages from your main navigation at the top to the buttons in the main content area and finishing off with the nav in the footer.
+
+            All pages have a tab index to the main content and the further for better navigation for keyboard users. Aria tags on buttons and areas where it is needed and custom js buttons to help with people that may not be able to use the small buttons.
+            
+            Thank you and enjoy the website!
+            </p>
+    </section>
+    <section class="content-area">
+        <a id="main-content"></a>
+        <h2 class="hidden">Main Content</h2>
+        <div class="audiosection">
+            <img src="images/audio_image.jpg" alt="Audio Image Girl wearing headphones" aria-label="This is the audio girl image">
+            <h3> Video Content</h3>
+            <button onclick="window.location.href='/video'" class="button-selector" aria-label="Go to Video page" role="link">Go to Video</button>
+
+              
+        </div>
+        <div class="videosection">
+            <img src="images/video_image.jpg" alt="Video Area Image of a tv playing a video" aria-label="This is the video camera image">
+            <h3>Audio Content</h3>
+                <button onclick="window.location.href='/audio'" class="button-selector" aria-label="Go to Audio page" role="link">Go to Audio</button>
+        </div>
+    </section>
